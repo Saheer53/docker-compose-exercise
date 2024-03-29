@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 // Connect to MongoDB
-mongoose.connect('mongodb://db/myapp', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://db:27017/myapp', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('Error connecting to MongoDB:', err));
 
